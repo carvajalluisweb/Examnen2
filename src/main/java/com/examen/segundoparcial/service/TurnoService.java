@@ -21,6 +21,8 @@ public class TurnoService {
         this.clienteRepository = clienteRepository;
     }
 
+  
+
     @Transactional
     public void crearTurno(String cedula,Turno turno) {
 
@@ -28,7 +30,7 @@ public class TurnoService {
 
         List<Turno> turnos = this.turnoRepository.findByTurno(turno.getNumturno());
         if (turnos.isEmpty()) {
-            turno.setCedulaCli(cliente.getCedula());
+            turno.setCedulaCli(cedula);
             turno.setNombreCli(cliente.getNombre());
             
 

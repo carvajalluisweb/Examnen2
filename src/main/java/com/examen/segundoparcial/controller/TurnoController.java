@@ -21,6 +21,9 @@ public class TurnoController {
         this.turnoService = turnoService;
     }
 
+
+
+
     @RequestMapping(value = "/{cedula}", method = RequestMethod.POST)
     public Object createTurno(@PathVariable("cedula")String cedula,@RequestBody TurnoRQ turnoRQ) {
         try {
