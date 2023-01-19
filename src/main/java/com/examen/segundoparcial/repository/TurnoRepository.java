@@ -4,9 +4,9 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 
-import com.examen.segundoparcial.model.Ejecutivo;
+import com.examen.segundoparcial.model.Turno;
 
 @Repository
-public interface EjecutivoRepository  extends MongoRepository<Ejecutivo,String>{
+public interface TurnoRepository  extends MongoRepository<Turno,String>{
     
 }
