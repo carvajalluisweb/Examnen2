@@ -1,6 +1,6 @@
 package com.examen.segundoparcial.controller;
 
-import java.text.ParseException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +26,7 @@ public class ClienteController {
     }
 
     @RequestMapping(value = "/cedula/{cedula}", method = RequestMethod.GET)
-    public Object findBCcedula(@PathVariable("cedula") String cedula) throws ParseException {
+    public Object findBCcedula(@PathVariable("cedula") String cedula){
         Iterable<Cliente> clientes = this.clienteService.findByCedula(cedula);
         List<ClienteRS> clientesRS = new ArrayList<>();
         for (Cliente cliente : clientes)
