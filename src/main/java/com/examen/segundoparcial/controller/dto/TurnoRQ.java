@@ -1,7 +1,7 @@
 package com.examen.segundoparcial.controller.dto;
 
 import java.io.Serializable;
-import java.security.Timestamp;
+import java.util.Date;
 
 import lombok.Builder;
 import lombok.Data;
@@ -15,9 +15,9 @@ public class TurnoRQ implements Serializable{
     private String nombreCli;
     private String codigoEj;
     private String nombreEj;
-    private Timestamp hfGerenacion;
-    private Timestamp hrInicio;
-    private Timestamp hfFin;
+    private Date hfGerenacion;
+    private Date hrInicio;
+    private Date hfFin;
     private Integer calificacion;
     
 }

@@ -1,5 +1,6 @@
 package com.examen.segundoparcial.model;
 import java.security.Timestamp;
+import java.util.Date;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Version;
@@ -20,9 +21,9 @@ public class Turno {
     private String nombreCli;
     private String codigoEj;
     private String nombreEj;
-    private Timestamp hfGerenacion;
-    private Timestamp hrInicio;
-    private Timestamp hfFin;
+    private Date hfGerenacion;
+    private Date hrInicio;
+    private Date hfFin;
     private Integer calificacion;
 
     @Version
